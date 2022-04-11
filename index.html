@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Portal de Filmes</title>
   </head>
   <body>
@@ -28,13 +29,13 @@
         <h1>Lançamentos</h1>
         <!-- Tag <video> com o trailer fo filme escolhido -->
         <h2>Nome do Filme</h2>
-        <p><b>Sinopse:</b></p>
+        <p><span class="bold-text">Sinopse:</span></p>
         <div class="movie-specs">
-          <p><b>Diretor:</b></p>
-          <p><b>Roteiro:</b></p>
-          <p><b>Estreia:</b></p>
-          <p><b>Elenco:</b></p>
-          <p><b>Avaliação:</b></p>
+          <p><span class="bold-text">Diretor:</span></p>
+          <p><span class="bold-text">Roteiro:</span></p>
+          <p><span class="bold-text">Estreia:</span></p>
+          <p><span class="bold-text">Elenco:</span></p>
+          <p><span class="bold-text">Avaliação:</span></p>
           <!-- Tag <img> com as avaliações do filme (estrelas) -->
         </div>
       </section>
@@ -60,7 +61,7 @@
         <div class="card-review">
           <!-- tag <img> com a foto do usuário -->
           <h2>Nome do avaliador</h2>
-          <p><b>Avaliação:</b></p>
+          <p><span class="bold-text">Avaliação:</span></p>
           <!-- tag <img> com o review da pessoa (estrelas) -->
           <p>02/09/2020</p>
         </div>
@@ -73,10 +74,10 @@
 
         <div class="movie-card">
           <!-- tag <video> com o trailer do filme -->
-          <h2><b>Filme:</b> Nome do filme</h2>
-          <p><b>Diretor:</b> Nome do diretor</p>
-          <p><b>Roteiro:</b> Nome do roteirista</p>
-          <p><b>Estreia:</b> 2020</p>
+          <h2><span class="bold-text">Filme:</span> Nome do filme</h2>
+          <p><span class="bold-text">Diretor:</span> Nome do diretor</p>
+          <p><span class="bold-text">Roteiro:</span> Nome do roteirista</p>
+          <p><span class="bold-text">Estreia:</span> 2020</p>
         </div>
 
         <button>+ Carregar mais filmes</button>
@@ -100,9 +101,11 @@
           <section id="editorial">
             <h2>Editorial</h2>
             <!-- img com a foto do redator, pesquisador e gerente ao lado de cada p -->
-            <p><b>Redação:</b> Nome de Redator</p>
-            <p><b>Pesquisa:</b> Nome do Pesquisador</p>
-            <p><b>Gerente Geral:</b> Nome do Editor Chefe</p>
+            <p><span class="bold-text">Redação:</span> Nome de Redator</p>
+            <p><span class="bold-text">Pesquisa:</span> Nome do Pesquisador</p>
+            <p>
+              <span class="bold-text">Gerente Geral:</span> Nome do Editor Chefe
+            </p>
           </section>
 
           <section id="social-media">
@@ -113,6 +116,12 @@
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <p>
+        Copyright 2020 - Disciplina de Desenvolvimento de Interfaces Web -
+        <span class="bold-text">ICEI PUC Minas</span>
+      </p>
+      <!-- Tag <img> com o logo do Portal -->
+    </footer>
   </body>
 </html>
