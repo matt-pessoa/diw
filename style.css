@@ -5,17 +5,9 @@ body {
 	font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-ul {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	list-style-type: none;
-}
-
-header {
-	margin: auto;
-	background-color: #c4c4c4;
-	padding-bottom: 2%;
+.title {
+	font-weight: 700;
+	font-size: 3em;
 }
 
 .bold-text {
@@ -79,7 +71,7 @@ header {
 }
 
 .social {
-	width: 30%;
+	width: 10%;
 }
 
 footer {
@@ -89,7 +81,20 @@ footer {
 	align-items: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+	ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		list-style-type: none;
+	}
+
+	header {
+		margin: auto;
+		background-color: #c4c4c4;
+		padding-bottom: 2%;
+	}
+
 	.logo-header {
 		display: flex;
 		flex-direction: column;
@@ -97,7 +102,7 @@ footer {
 		justify-content: center;
 	}
 
-	#releases h1 {
+	.title {
 		font-weight: 700;
 		font-size: 3em;
 	}
@@ -122,8 +127,149 @@ footer {
 	}
 }
 
-@media (min-width: 601px) {
+@media (max-width: 1000px) {
+	header {
+		display: block;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		list-style-type: none;
+	}
+
+	header {
+		margin: auto;
+		background-color: #c4c4c4;
+		padding-bottom: 2%;
+	}
+
+	.logo-header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#releases h1 {
+		font-weight: 700;
+		font-size: 3em;
+	}
+
+	.cards {
+		display: flex;
+	}
+
+	.container {
+		margin: auto;
+		max-width: 640px;
+	}
+
+	iframe {
+		width: 80%;
+		height: 80%;
+	}
+
+	.movie-posters {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.movie {
+		width: 30%;
+	}
+}
+
+@media (min-width: 1000px) {
 	body {
-		background-color: blue;
+		font-size: 25px;
+	}
+
+	header {
+		display: flex;
+	}
+
+	.logo-header {
+		margin-left: 20%;
+	}
+
+	ul {
+		display: flex;
+		list-style-type: none;
+	}
+
+	ul li {
+		margin-left: 20%;
+	}
+
+	.nav-item {
+		font-size: 0.5em;
+	}
+
+	.logo-header {
+		display: flex;
+		align-items: baseline;
+	}
+
+	.logo-header h1 {
+		margin-right: 10%;
+	}
+
+	.logo-header input {
+		height: 40%;
+	}
+
+	#releases h1 {
+		font-weight: 700;
+		font-size: 3em;
+	}
+
+	.landing {
+		display: flex;
+	}
+
+	.cards-movies {
+		display: flex;
+	}
+
+	.container {
+		margin: auto;
+		max-width: 80%;
+	}
+
+	iframe {
+		margin-right: 10%;
+	}
+
+	.img-review {
+		width: 10%;
+	}
+
+	.movie-posters {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.movie {
+		width: 30%;
+	}
+
+	.social {
+		width: 10%;
+	}
+
+	.cards {
+		display: flex;
+	}
+
+	.side-by-side {
+		display: flex;
+	}
+
+	aside {
+		width: 30%;
+		font-size: 0.7em;
+		margin-top: 20%;
 	}
 }

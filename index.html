@@ -6,12 +6,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 		<title>Portal de Filmes</title>
 	</head>
 
 	<body>
+
 		<header>
 			<div class="logo-header">
 				<h1>moview</h1>
@@ -19,11 +20,11 @@
 			</div>
 			<nav>
 					<ul>
-						<li><a href="#releases">lançamentos</a></li>
-						<li><a href="#highlights">em destaque</a></li>
-						<li><a href="#reviews">avaliações</a></li>
-						<li><a href="#making-of">entrevistas & makingof</a></li>
-						<li><a href="#news">novidades</a></li>
+						<li><a class="nav-item" href="#releases">lançamentos</a></li>
+						<li><a class="nav-item" href="#highlights">em destaque</a></li>
+						<li><a class="nav-item" href="#reviews">avaliações</a></li>
+						<li><a class="nav-item" href="#making-of">entrevistas & makingof</a></li>
+						<li><a class="nav-item" href="#news">novidades</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -31,27 +32,31 @@
 			<main>
 				<section id="releases">
 					<div class="container">
-						<h1>Lançamentos</h1>
-						<iframe
-							src="https://www.youtube.com/embed/IEh1HFFfuMo"
-						>
-						</iframe>
-						<h2>A Vida de Brian</h2>
-						<p><span class="bold-text">Sinopse:</span> Sátira irreverente sobre a visão de Hollywood em relação aos temas bíblicos e religiosos. Em 33 D.C. na Judéia, a sociedade sofre com a pobreza e a desordem. Brian Cohen (Graham Chapman) é um candidato a messias que se envolve em uma série de histórias hilárias, tornando-se cada vez mais importante entre todo o grupo.</p>
-						<div class="movie-specs">
-							<p><span class="bold-text">Diretor:</span> Terry Jones</p>
-							<p><span class="bold-text">Roteiro:</span> Graham Chapman, John Cleese, Terry Gilliam</p>
-							<p><span class="bold-text">Estreia:</span> 1979</p>
-							<p><span class="bold-text">Elenco:</span> Graham Chapman, John Cleese, Terry Gilliam, Eric Idle, Terry Jones, Michal Pali, Carol Cleveland</p>
-							<p><span class="bold-text">Avaliação:</span></p>
-							<img src="./img/review.png" alt="4 estrelas">
+						<h1 class="title">Lançamentos</h1>
+						<div class="landing">
+							<iframe
+								src="https://www.youtube.com/embed/IEh1HFFfuMo"
+							>
+							</iframe>
+							<div class="specs">
+								<h2>A Vida de Brian</h2>
+								<p><span class="bold-text">Sinopse:</span> Sátira irreverente sobre a visão de Hollywood em relação aos temas bíblicos e religiosos. Em 33 D.C. na Judéia, a sociedade sofre com a pobreza e a desordem. Brian Cohen (Graham Chapman) é um candidato a messias que se envolve em uma série de histórias hilárias, tornando-se cada vez mais importante entre todo o grupo.</p>
+								<div class="movie-specs">
+									<p><span class="bold-text">Diretor:</span> Terry Jones</p>
+									<p><span class="bold-text">Roteiro:</span> Graham Chapman, John Cleese, Terry Gilliam</p>
+									<p><span class="bold-text">Estreia:</span> 1979</p>
+									<p><span class="bold-text">Elenco:</span> Graham Chapman, John Cleese, Terry Gilliam, Eric Idle, Terry Jones, Michal Pali, Carol Cleveland</p>
+									<p><span class="bold-text">Avaliação:</span></p>
+									<img class="img-review" src="./img/review.png" alt="4 estrelas">
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
 					
 					<section id="highlights">
 						<div class="container">
-							<h1>Em destaque</h1>
+							<h1 class="title">Em destaque</h1>
 							<select>
 								<option value="" disabled selected>Categoria</option>
 								<option value="all">TODOS</option>
@@ -72,36 +77,39 @@
 
 				<section id="reviews">
 					<div class="container">
-						<h1>Últimas avaliações</h1>
+						<h1 class="title">Últimas avaliações</h1>
 						
-						<div class="card-review">
-							<div class="user">
-								<img class="user-icon" src="./img/user.png" alt="user icon">
-								<h2>Arthur Doyle</h2>
-							</div>
-							<p><span class="bold-text">Avaliação:</span> Um dos finais mais absurdos e geniais da história do cinema.</p>
-							<img src="./img/review.png" alt="4 estrelas">
-							<p>02/09/2020</p>
-						</div>
+						<div class="cards">
 
-						<div class="card-review">
-							<div class="user">
-								<img class="user-icon" src="./img/user.png" alt="user icon">
-								<h2>Yasmin</h2>
+							<div class="card-review">
+								<div class="user">
+									<img class="user-icon" src="./img/user.png" alt="user icon">
+									<h2>Arthur Doyle</h2>
+								</div>
+								<p><span class="bold-text">Avaliação:</span> Um dos finais mais absurdos e geniais da história do cinema.</p>
+								<img src="./img/review.png" alt="4 estrelas">
+								<p>02/09/2020</p>
 							</div>
-							<p><span class="bold-text">Avaliação:</span> Sempre serei grata por minha mãe e tia terem me apresentado Monty Python quando mais nova. Humor galhofa britânico que tanto amo. <3</p>
-							<img src="./img/review.png" alt="4 estrelas">
-							<p>02/09/2020</p>
-						</div>
-
-						<div class="card-review">
-							<div class="user">
-								<img class="user-icon" src="./img/user.png" alt="user icon">
-								<h2>Capitão Nemo</h2>
+	
+							<div class="card-review">
+								<div class="user">
+									<img class="user-icon" src="./img/user.png" alt="user icon">
+									<h2>Yasmin</h2>
+								</div>
+								<p><span class="bold-text">Avaliação:</span> Sempre serei grata por minha mãe e tia terem me apresentado Monty Python quando mais nova. Humor galhofa britânico que tanto amo. <3</p>
+								<img src="./img/review.png" alt="4 estrelas">
+								<p>02/09/2020</p>
 							</div>
-							<p><span class="bold-text">Avaliação:</span> Uma sátira meio inteligente, meio boba e engraçadinha, às vezes.</p>
-							<img src="./img/review.png" alt="4 estrelas">
-							<p>02/09/2020</p>
+	
+							<div class="card-review">
+								<div class="user">
+									<img class="user-icon" src="./img/user.png" alt="user icon">
+									<h2>Capitão Nemo</h2>
+								</div>
+								<p><span class="bold-text">Avaliação:</span> Uma sátira meio inteligente, meio boba e engraçadinha, às vezes.</p>
+								<img src="./img/review.png" alt="4 estrelas">
+								<p>02/09/2020</p>
+							</div>
 						</div>
 						
 						<button>+ Carregar mais avaliações</button>
@@ -111,31 +119,34 @@
 				<section id="making-of">
 					<div class="container">
 
-						<h1>Entrevistas & Making of</h1>
+						<h1 class="title">Entrevistas & Making of</h1>
+
+						<div class="cards-movies">
+							<div class="movie-card">
+								<iframe src="https://www.youtube.com/embed/BPK4V_TNi7k"></iframe>
+									<h2><span class="bold-text">Filme:</span> A Vida de Brian</h2>
+									<p><span class="bold-text">Diretor:</span> Terry Jones</p>
+									<p><span class="bold-text">Roteiro:</span> Graham Chapman, John Cleese, Terry Gilliam</p>
+									<p><span class="bold-text">Estreia:</span> 1979</p>
+							</div>
+		
+							<div class="movie-card">
+								<iframe src="https://www.youtube.com/embed/MIy_HVS64z8"></iframe>
+									<h2><span class="bold-text">Filme:</span> Memento</h2>
+									<p><span class="bold-text">Diretor:</span> Christopher Nolan</p>
+									<p><span class="bold-text">Roteiro:</span> Christopher Nolan, Jonathan Nolan</p>
+									<p><span class="bold-text">Estreia:</span> 2000</p>
+							</div>
+		
+							<div class="movie-card">
+								<iframe src="https://www.youtube.com/embed/hVnQ20HSy_o"></iframe>
+									<h2><span class="bold-text">Filme:</span> The French Dispatch</h2>
+									<p><span class="bold-text">Diretor:</span> Wes Anderson</p>
+									<p><span class="bold-text">Roteiro:</span> Wes Anderson</p>
+									<p><span class="bold-text">Estreia:</span> 2021</p>
+							</div>
+						</div>
 						
-						<div class="movie-card">
-							<iframe src="https://www.youtube.com/embed/BPK4V_TNi7k"></iframe>
-								<h2><span class="bold-text">Filme:</span> A Vida de Brian</h2>
-								<p><span class="bold-text">Diretor:</span> Terry Jones</p>
-								<p><span class="bold-text">Roteiro:</span> Graham Chapman, John Cleese, Terry Gilliam</p>
-								<p><span class="bold-text">Estreia:</span> 1979</p>
-						</div>
-	
-						<div class="movie-card">
-							<iframe src="https://www.youtube.com/embed/MIy_HVS64z8"></iframe>
-								<h2><span class="bold-text">Filme:</span> Memento</h2>
-								<p><span class="bold-text">Diretor:</span> Christopher Nolan</p>
-								<p><span class="bold-text">Roteiro:</span> Christopher Nolan, Jonathan Nolan</p>
-								<p><span class="bold-text">Estreia:</span> 2000</p>
-						</div>
-	
-						<div class="movie-card">
-							<iframe src="https://www.youtube.com/embed/hVnQ20HSy_o"></iframe>
-								<h2><span class="bold-text">Filme:</span> The French Dispatch</h2>
-								<p><span class="bold-text">Diretor:</span> Wes Anderson</p>
-								<p><span class="bold-text">Roteiro:</span> Wes Anderson</p>
-								<p><span class="bold-text">Estreia:</span> 2021</p>
-						</div>
 					
 						<button>+ Carregar mais filmes</button>
 					</div>
@@ -143,8 +154,9 @@
 					
 					<section id="news">
 						<div class="container">
-								<h1>Novidades</h1>
+							<div class="side-by-side">
 								<div id="article-group">
+									<h1 class="title">Novidades</h1>
 									<article class="article-item">
 										<a href="https://www.theguardian.com/tv-and-radio/2019/oct/04/monty-python-at-50-a-half-century-of-silly-walks-edible-props-and-dead-parrots">
 											<img class="article-img" src="./img/1395.jpg" alt="Monty Python Holy Grail">
@@ -190,6 +202,7 @@
 										</div>
 									</section>
 								</aside>
+							</div>
 							</section>
 						</div>
 			</main>
@@ -197,7 +210,7 @@
 			<footer>
 				<p>ICEI PUC Minas</p>
 				<h1>moview</h1>
-			</footer>
+			</footer> 
 
 		</body>
 		</html>
