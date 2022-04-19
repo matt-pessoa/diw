@@ -1,0 +1,129 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #eeeeee;
+	font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	list-style-type: none;
+}
+
+header {
+	margin: auto;
+	background-color: #c4c4c4;
+	padding-bottom: 2%;
+}
+
+.bold-text {
+	font-weight: 700;
+}
+
+#releases {
+	padding-bottom: 10%;
+}
+
+#highlights,
+#reviews {
+	background-color: #ffffff;
+}
+
+#highlights {
+	padding-top: 5%;
+}
+
+#reviews {
+	margin: 0;
+	padding-top: 5%;
+	padding-bottom: 10%;
+}
+
+.user {
+	display: flex;
+	align-items: baseline;
+}
+
+.user img {
+	margin-right: 5%;
+}
+
+.user-icon {
+	width: 10%;
+	height: 10%;
+}
+
+.movie-card {
+	padding-top: 5%;
+}
+
+#making-of {
+	padding-bottom: 5%;
+}
+
+#news {
+	background-color: #c4c4c4;
+	padding-top: 5%;
+	padding-bottom: 10%;
+}
+
+.article-img {
+	width: 80%;
+}
+
+.social-icons {
+	display: flex;
+	justify-content: space-around;
+}
+
+.social {
+	width: 30%;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width: 600px) {
+	.logo-header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#releases h1 {
+		font-weight: 700;
+		font-size: 3em;
+	}
+
+	.container {
+		margin: auto;
+		max-width: 80%;
+	}
+
+	iframe {
+		width: 80%;
+		height: 80%;
+	}
+
+	.movie-posters {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.movie {
+		width: 30%;
+	}
+}
+
+@media (min-width: 601px) {
+	body {
+		background-color: blue;
+	}
+}
